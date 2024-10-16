@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  /* New color scheme */
+  --color-dark-gray: #333333;
+  --color-light-gray: #D0CECE;
+  --color-dark-blue: #0151AA;
+  --color-teal: #0151AA;
+  /* --color-teal: #149C9A; */
+  --color-light-blue: #A6D7FC;
+  --color-lightest-blue: #E7F2FF;
+  --color-off-white: #F6F8FA;
+  --color-white: #FDFDFD;
+  --color-teal-light: rgba(1, 81, 170, 0.4);
+  /* rgba(1, 81, 170, 1) */
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    /* Update dark mode colors if needed */
+    --color-dark-gray: #333333;
+    --color-light-gray: #D0CECE;
+    /* --color-teal: #149C9A; */
+    --color-dark-blue: #0151AA;
+    --color-light-blue: #A6D7FC;
+    --color-lightest-blue: #E7F2FF;
+    --color-off-white: #F6F8FA;
+    --color-white: #FDFDFD;
+    --color-teal-light: rgba(1, 81, 170, 0.3);
+  }
+}
+
+body {
+  color: rgb(var(--color-dark-gray));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--color-white))
+    )
+    rgb(var(--color-white));
+
+
+}
